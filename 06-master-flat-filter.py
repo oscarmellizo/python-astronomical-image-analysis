@@ -3,8 +3,6 @@ from astropy.io import fits
 import glob
 from constants import FLAT_FOLDER
 
-# Ruta donde se almacenan los archivos flat (en formato FITS)
-
 def create_master_flat(filter):
     flat_files = glob.glob(FLAT_FOLDER + "FLAT*" + filter + "_bias.fits")  # Cargar todos los archivos FITS en la carpeta por filtro
 

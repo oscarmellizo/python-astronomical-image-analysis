@@ -35,6 +35,6 @@ def correct_flat_science_images(filter):
         continue
         
 correct_flat_science_images('B')
-#correct_flat_science_images('V')
-#correct_flat_science_images('R')
-#correct_flat_science_images('I')
+correct_flat_science_images('V')
+correct_flat_science_images('R')
+correct_flat_science_images('I')

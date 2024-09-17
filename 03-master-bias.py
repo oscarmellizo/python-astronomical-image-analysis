@@ -1,12 +1,9 @@
 import numpy as np
 from astropy.io import fits
-import matplotlib.pyplot as plt
 import glob
 from constants import BIAS_FOLDER
 import show_img as si 
 
-
-# Ruta donde se almacenan los archivos bias (en formato FITS)
 bias_files = glob.glob(BIAS_FOLDER + "*.fits")  # Cargar todos los archivos FITS en la carpeta
 
 # Leer las imágenes bias

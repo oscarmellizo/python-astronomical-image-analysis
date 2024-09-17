@@ -7,7 +7,6 @@ from constants import DATA_FOLDER
 
 # Cargar la imagen de ciencia
 image_data = fits.getdata(DATA_FOLDER + '2S0114-0001_B_cm_bias_corrected.fits')
-#image_data = fits.getdata(DATA_FOLDER + 'ciencia_calibrada_V.fits')
 
 mean, median, std = sigma_clipped_stats(image_data, sigma=3.0) 
 

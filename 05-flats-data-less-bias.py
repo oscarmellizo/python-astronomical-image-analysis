@@ -4,8 +4,6 @@ from astropy.io import fits
 import glob
 from constants import BIAS_FOLDER, FLAT_FOLDER, DATA_FOLDER
 
-# Ruta donde se almacenan los archivos bias (en formato FITS)
-
 # Cargar el Master Bias
 with fits.open(BIAS_FOLDER + 'master_bias.fits') as hdul:
     master_bias = hdul[0].data
@@ -26,8 +24,6 @@ for file in flat_files:
         continue
 
 print("Flats corregidos y guardados.")
-
-# Ruta donde se almacenan los archivos flat (en formato FITS)
 
 data_files = glob.glob(DATA_FOLDER + "*_cm.fits")  # Cargar todos los archivos FITS en la carpeta
 

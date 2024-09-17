@@ -30,7 +30,7 @@ def show_image(image_data):
 
     # Mostrar la imagen
     plt.figure(figsize=(10, 10))  # Tamaño de la figura (ajustar según necesidades)
-    plt.imshow(image_data, cmap='Blues', origin='lower', vmin=-35, vmax=50)  # Mapa de colores y origen
+    plt.imshow(image_data, cmap='Blues', origin='lower', vmin=z1, vmax=z2)  # Mapa de colores y origen
     plt.colorbar()  # Mostrar barra de color si es necesario
     plt.title('Imagen de Astronomía')  # Título de la imagen
     plt.xlabel('Coordenada X')  # Etiqueta del eje X
